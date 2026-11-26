@@ -1,4 +1,4 @@
-from agent import agent
+from src.agent import agent
 
 question = "Que dia da semana e do mês é hoje?"
 result = agent.invoke({"messages": [("human", question)]})

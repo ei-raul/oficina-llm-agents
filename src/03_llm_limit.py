@@ -1,4 +1,4 @@
-from models import llm_gpt, llm_gemini
+from src.models import llm_gpt, llm_gemini
 
 print("="*30)
 resp_gpt = llm_gpt.invoke("Que dia da semana e do mês é hoje?")

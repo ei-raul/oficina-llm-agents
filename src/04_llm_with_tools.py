@@ -1,5 +1,5 @@
-from models import llm_gpt, llm_gemini
-from tools import data_hora_atual
+from src.models import llm_gpt, llm_gemini
+from src.tools import data_hora_atual
 
 gpt_with_tools = llm_gpt.bind_tools([data_hora_atual])
 gemini_with_tools = llm_gemini.bind_tools([data_hora_atual])

@@ -1,7 +1,7 @@
 from langgraph.graph import StateGraph, MessagesState, START, END
 from langgraph.prebuilt import ToolNode, tools_condition
-from models import llm_gpt
-from tools import data_hora_atual
+from src.models import llm_gpt
+from src.tools import data_hora_atual
 
 tools = [data_hora_atual]
 gpt_with_tools = llm_gpt.bind_tools(tools)
