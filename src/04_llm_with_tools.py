@@ -1,8 +1,8 @@
 from src.models import llm_gpt, llm_gemini
-from src.tools import data_hora_atual
+from src.tools import current_datetime
 
-gpt_with_tools = llm_gpt.bind_tools([data_hora_atual])
-gemini_with_tools = llm_gemini.bind_tools([data_hora_atual])
+gpt_with_tools = llm_gpt.bind_tools([current_datetime])
+gemini_with_tools = llm_gemini.bind_tools([current_datetime])
 
 print("="*30)
 resp_gpt = gpt_with_tools.invoke("Que dia da semana e do mês é hoje?")
