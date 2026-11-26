@@ -4,14 +4,16 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Raul Lima", email = "raul.lima.consult@patria.com" }
+    { name = "Raul Lima", email = "raul.lima@datamint.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+    "langchain>=1.5.2",
+    "langchain-groq>=1.2.1",
+    "langgraph>=1.2.24",
+    "python-dotenv>=1.2.4",
+]
 
 [project.scripts]
-oficina-llm-agents = "oficina_llm_agents:main"
-
-[build-system]
-requires = ["uv_build>=0.13.4,<0.14.0"]
-build-backend = "uv_build"
+oficina-llm-agents = "main"
